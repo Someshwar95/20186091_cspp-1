@@ -14,8 +14,8 @@ Pseudo code
 			1. if numarr[i] == numarr[j]:
 				a. Add 1 to freqcount
 			2. Add 1 to j
-		 iv. if freqcount > max:
-			1. Set max = freqcount
+		 iv. if freq count > max:
+			1. Set max = freq count
 			2. Set maxvalue = temp
 		  v. Add 1 to i
 
