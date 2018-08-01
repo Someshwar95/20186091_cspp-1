@@ -2,4 +2,7 @@
 #@author : Someshwar95
 my first program in cspp1
 '''
-print("hello world")
+num = 10
+while num > 3:
+    num -= 1
+    print(num) 
