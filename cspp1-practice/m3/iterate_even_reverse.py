@@ -3,9 +3,7 @@
 reversing the even iterate 
 '''
 print("Hello!")
-n=2
-i=5
-while i>=1:
-	print(n*i)
-	i -= 1
+for i in range(10,1,-2):
+	print(i)
+	
 	
