@@ -3,8 +3,6 @@
 sum the values
 '''
 a=0
-i=1
-while i <=6:
-	a+=i
-	i+=1
-print(a)
+for i in range(1,7,1):
+	a +=i
+	print(a)
