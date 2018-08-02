@@ -9,8 +9,8 @@
 def main():
     s_str = input()
     '''
-    # the input string is in s
-    # remove pass and start your code here
+    Write a program that counts up the number of 
+    vowels contained in the string s
     '''
     Vowels_ow = 0
     for x in s:
