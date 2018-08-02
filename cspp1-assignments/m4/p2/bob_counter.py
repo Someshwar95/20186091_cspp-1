@@ -15,7 +15,7 @@ def main():
     for u in range(len(s)):
         if s[u:u+3] == "bob":
             num += 1
-            print('num are: ' + str(num))
+            print(num)
 
 if __name__== "__main__":
     main()
