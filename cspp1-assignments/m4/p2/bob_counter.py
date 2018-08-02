@@ -14,6 +14,7 @@ def main():
     for u_lkj in range(len(s_case)):
         if s_case[u_lkj:u_lkj+3] == "bob":
             num += 1
-            print(num)
+    print(num)
+
 if __name__== "__main__":
     main()
