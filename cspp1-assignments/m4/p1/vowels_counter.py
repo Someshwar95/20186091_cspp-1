@@ -7,11 +7,11 @@
 @author: Someshwar95
 '''
 def main():
-    s_str = input()
     '''
     Write a program that counts up the number of 
     vowels contained in the string s
     '''
+    s_str = input()
     vowels_ow = 0
     for x_lm in s_str:
         if x_lm == 'a' or x_lm == 'e' or x_lm == 'i' or x_lm == 'o' or x_lm == 'u':
