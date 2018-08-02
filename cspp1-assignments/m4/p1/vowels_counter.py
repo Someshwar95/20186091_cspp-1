@@ -14,5 +14,5 @@ def main():
         if x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u':
             Vowels += 1
             print('Vowels are: ' + str(Vowels))
-    if __name__== "__main__":
+    if __name__ == "__main__":
     main()
