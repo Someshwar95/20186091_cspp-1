@@ -6,16 +6,14 @@ Number of times bob occurs is: 2
 '''
 
 def main():
-    s = input()
     '''
-    # the input string is in s
-    # remove pass and start your code here
+    program for print the number of bob.
     '''
+    s_case = input()
     num = 0
-    for u in range(len(s)):
-        if s[u:u+3] == "bob":
+    for u_lkj in range(len(s_case)):
+        if s_case[u_lkj:u_lkj+3] == "bob":
             num += 1
             print(num)
-
 if __name__== "__main__":
     main()
