@@ -6,16 +6,16 @@
 @author: Someshwar95
 '''
 def main():
-    s = input()
+    s_str = input()
     '''
     # the input string is in s
     # remove pass and start your code here
     '''
-    Vowels = 0
+    Vowels_ow = 0
     for x in s:
         if x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u':
             Vowels += 1
-    print('Vowels are: ' + str(Vowels))
+    print('Vowels_ow are: ' + str(Vowels))
 
     if __name__ == "__main__":
         main()
