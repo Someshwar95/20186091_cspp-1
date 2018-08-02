@@ -6,7 +6,7 @@
 @author: Someshwar95
 '''
 def main():
-    s = string(input())
+    s = input()
     '''
     # the input string is in s
     # remove pass and start your code here
