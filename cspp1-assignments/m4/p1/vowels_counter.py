@@ -12,11 +12,12 @@ def main():
     vowels contained in the string s
     '''
     s_str = input()
-    vowels_ow = 0    
+    vowels_ow = 0
     for x_lm in s_str:
-        if x_lm == 'a' or x_lm == 'e' or x_lm == 'i' or x_lm == 'o' or x_lm == 'u':
+        if x_lm in 'a' or x_lm in 'e' or x_lm in 'i'
+        or x_lm in 'o' or x_lm in 'u':
             vowels_ow += 1
     print('vowels_ow are: ' + str(vowels_ow))
 
-    if __name__ == "__main__":
+    if __name__ in "__main__":
         main()
