@@ -18,5 +18,5 @@ def main():
             Vowels_ow += 1
     print('Vowels_ow are: ' + str(Vowels_ow))
 
- if __name__ == "__main__":
+    if __name__ == "__main__":
         main()
