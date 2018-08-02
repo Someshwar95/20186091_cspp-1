@@ -7,8 +7,10 @@
 '''
 def main():
     s = string(input())
+    '''
     # the input string is in s
     # remove pass and start your code here
+    '''
     Vowels = 0
     for x in s:
         if x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u':
