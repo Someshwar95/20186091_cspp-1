@@ -19,12 +19,12 @@ def main():
     k = 0
     cube =0
     for i in range(s):
-        if i**3 ==s:
+        if i**3 == s:
             cube = i
     if cube > 0:
-        print(cube)
+        print(s, ' is a perfect cube')
     else:
-        print('it is not a perfect cube')
+        print(s, 'is not a perfect cube')
     
 
 
