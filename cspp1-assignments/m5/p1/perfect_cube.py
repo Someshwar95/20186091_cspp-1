@@ -18,8 +18,8 @@ def main():
     s = int(input())
     k = 0
     cube =0
-    for i in range(n):
-        if i**3 ==n:
+    for i in range(s):
+        if i**3 ==s:
             cube = i
     if cube > 0:
         print(cube)
