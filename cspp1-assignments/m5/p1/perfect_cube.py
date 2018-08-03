@@ -15,15 +15,15 @@ def main():
     # watch out for the data type of value stored in s
     # your code starts here
     '''
-    s = int(input())
+    s_cub = int(input())
     k = 0
     cube = 0
-    for i in range(s):
-        if i**3 == s:
+    for i in range(s_cub):
+        if i**3 == s_cub:
             cube = i
     if cube > 0:
-        print(s, 'is a perfect cube')
+        print(s_cub, 'is a perfect cube')
     else:
-        print(s, 'is not a perfect cube')
+        print(s_cub, 'is not a perfect cube')
 if __name__ == "__main__":
     main()
