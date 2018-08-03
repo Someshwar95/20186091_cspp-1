@@ -19,7 +19,7 @@ def main():
     guess = x/2.0
     #guessesare = 0
     while abs(guess*guess - x) >= epsilon:
-        guessesare += 1 
+        #guessesare += 1 
         guess = guess - (((guess**2) - x)/(2*guess))
     #print('guessesare = ' + str(guessesare))
     #print('square root of ' + str(x) + 'is about ' + str(guess))
