@@ -9,13 +9,13 @@
 # output: 6.999999999999991
 '''
 def main():
-	s = raw_input()
-	'''
-	# epsilon and step are initialized
-	# don't change these values
-	'''
-	epsilon = 0.01
-    x = 25.0
+    s = raw_input()
+    '''
+    # epsilon and step are initialized
+    # don't change these values
+    '''
+    epsilon = 0.01
+    x = 25
     guess = x/2.0
     guessesare = 0
     while abs(guess*guess - x) >= epsilon:
@@ -26,4 +26,4 @@ def main():
         
 
 if __name__== "__main__":
-	main()
+    main()
