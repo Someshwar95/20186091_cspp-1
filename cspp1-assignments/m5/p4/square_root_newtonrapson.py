@@ -19,6 +19,5 @@ def main():
     while abs(guess*guess - s_in) >= epsilon:
         guess = guess - (((guess**2) - s_in)/(2*guess))
     print(guess)   
-
 if __name__ == "__main__":
     main()
