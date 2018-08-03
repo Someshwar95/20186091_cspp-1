@@ -9,7 +9,7 @@
 # output: 6.999999999999991
 '''
 def main():
-    s = raw_input()
+    s = input()
     '''
     # epsilon and step are initialized
     # don't change these values
