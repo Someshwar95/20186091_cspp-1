@@ -16,7 +16,6 @@ def main():
     # your code starts here
     '''
     s_cub = int(input())
-    k = 0
     cube = 0
     for i in range(s_cub):
         if i**3 == s_cub:
