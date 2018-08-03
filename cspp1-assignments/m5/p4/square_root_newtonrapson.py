@@ -15,14 +15,9 @@ def main():
     # don't change these values
     '''
     epsilon = 0.01
-    #x = 25
     guess = s/2.0
-    #guessesare = 0
     while abs(guess*guess - s) >= epsilon:
-        #guessesare += 1 
         guess = guess - (((guess**2) - s)/(2*guess))
-    #print('guessesare = ' + str(guessesare))
-    #print('square root of ' + str(x) + 'is about ' + str(guess))
     print(guess)   
 
 if __name__== "__main__":
