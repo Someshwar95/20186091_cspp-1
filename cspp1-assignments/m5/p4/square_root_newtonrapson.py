@@ -15,8 +15,8 @@ def main():
     # don't change these values
     '''
     epsilon = 0.01
-    x = 25
-    guess = x/2.0
+    #x = 25
+    guess = s/2.0
     #guessesare = 0
     while abs(guess*guess - x) >= epsilon:
         #guessesare += 1 
