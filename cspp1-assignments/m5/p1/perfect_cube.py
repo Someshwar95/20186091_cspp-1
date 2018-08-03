@@ -25,5 +25,5 @@ def main():
         print(s, 'is a perfect cube')
     else:
         print(s, 'is not a perfect cube')
-    if __name__== "__main__":
+if __name__== "__main__":
     main()
