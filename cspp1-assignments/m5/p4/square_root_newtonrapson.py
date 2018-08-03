@@ -13,11 +13,11 @@ def main():
     # epsilon and step are initialized
     # don't change these values
     '''
-    s = float(input())
+    s_in = float(input())
     epsilon = 0.01
-    guess = s/2.0
-    while abs(guess*guess - s) >= epsilon:
-        guess = guess - (((guess**2) - s)/(2*guess))
+    guess = s_in/2.0
+    while abs(guess*guess - s_in) >= epsilon:
+        guess = guess - (((guess**2) - s_in)/(2*guess))
     print(guess)   
 
 if __name__ == "__main__":
