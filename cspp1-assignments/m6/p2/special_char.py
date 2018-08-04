@@ -14,7 +14,7 @@ def main():
             str1_input += ""
         else:
             str1_input+=char
-    print(char)
+    print(str1_input)
 
 if __name__ == "__main__":
     main()
