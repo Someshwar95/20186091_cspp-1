@@ -10,7 +10,7 @@ def main():
     Read number from the input, store it in variable num.
     '''
     num = int(input())
-    i=1
+    i = 1
     while i <= num:
         if i % 3 == 0:
             print("Fizz")
