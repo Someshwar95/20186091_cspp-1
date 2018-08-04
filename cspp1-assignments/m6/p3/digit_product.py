@@ -10,8 +10,9 @@ def main():
     Read any number from the input, store it in variable int_input.
     '''
     int_input = int(input())
-    for i in int_input:
-        print(int_input)
+    int1_input =
+    int2_input =
+    print(int_input * int1_input * int2_input)
 
 
 if __name__ == "__main__":
