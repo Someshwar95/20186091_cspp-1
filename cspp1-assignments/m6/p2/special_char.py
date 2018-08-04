@@ -10,7 +10,7 @@ def main():
     str_input = input()
     str1_input = ""
     for char in str_input:
-        for char in'!@#$%^&*':
+        for char in'!, @, #, $, %, ^, &, *':
             char = str_input + str1_input
             print(char)
 
