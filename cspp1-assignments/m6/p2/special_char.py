@@ -10,9 +10,11 @@ def main():
     str_input = input()
     str1_input = ""
     for char in str_input:
-        for char in'!, @, #, $, %, ^, &, *':
-            char = str_input + str1_input
-            print(char)
+        if char in'!, @, #, $, %, ^, &, *':
+            str1_input += ""
+        else:
+            str1_input+=char
+    print(char)
 
 if __name__ == "__main__":
     main()
