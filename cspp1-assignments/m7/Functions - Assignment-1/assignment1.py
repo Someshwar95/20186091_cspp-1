@@ -29,7 +29,7 @@ def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
 		Monthlyunpaidbalance = (balance) - (monthlyPaymentRate*balance)
 		Updatedbalanceeachmonth = (Monthlyunpaidbalance) + (annualInterestRate/12.0 * Monthlyunpaidbalance)
 		balance = Updatedbalanceeachmonth
-	return round(Updatedbalanceeachmonth,3)
+	return round(Updatedbalanceeachmonth,2)
 	
 		
 def main():
@@ -37,7 +37,7 @@ def main():
 	data = data.split(' ')
 	data = list(map(float, data))
 	print('Remaining balance:',payingDebtOffInAYear(data[0],data[1],data[2]))
-	
+
 if __name__== "__main__":
 	main()
 
