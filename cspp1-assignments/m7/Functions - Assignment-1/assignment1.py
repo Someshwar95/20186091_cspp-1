@@ -20,7 +20,8 @@ the remaining balance at the end of the year in the format:
 # Monthly interest rate= (Annual interest rate) / 12.0
 # Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
 # Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
-# Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
+# Updated balance each month = (Monthly unpaid balance)
++ (Monthly interest rate x Monthly unpaid balance)
 @author: Someshwar95
 '''
 
