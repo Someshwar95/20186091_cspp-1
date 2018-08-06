@@ -40,7 +40,7 @@ def main():
 	data = input()
 	data = data.split(' ')
 	data = list(map(float, data))
-	print("lowest payment: "+str(payingDebtOffInAYear(data[0],data[1]))
+	print("Lowest payment: "+str(payingDebtOffInAYear(data[0],data[1]))
 	
 if __name__ == "__main__":
 	main()
