@@ -32,7 +32,7 @@ def payingdebtoffin_ayear(balance, annualinterest_rate, monthlypayment_rate):
         Monthlyunpaidbalance = (balance) - (monthlypayment_rate*balance)
         Updatedbalanceeachmonth = (Monthlyunpaidbalance) + (annualinterest_rate/12.0 * Monthlyunpaidbalance)
         balance = Updatedbalanceeachmonth
-    return round(Updatedbalanceeachmonth,2)
+    return round(Updatedbalanceeachmonth, 2)
 
 def main():
     '''
@@ -41,7 +41,7 @@ def main():
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
-    print('Remaining balance:',payingdebtoffin_ayear(data[0],data[1],data[2]))
+    print('Remaining balance:',payingdebtoffin_ayear(data[0], data[1], data[2]))
 
 if __name__ == "__main__":
     main()
