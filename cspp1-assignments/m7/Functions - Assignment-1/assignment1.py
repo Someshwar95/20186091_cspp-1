@@ -37,7 +37,7 @@ def main():
 	data = data.split(' ')
 	data = list(map(float, data))
 	print(payingDebtOffInAYear(data[0],data[1],data[2]))
-	
+	print('Remaining balance:',balance)
 if __name__== "__main__":
 	main()
 
