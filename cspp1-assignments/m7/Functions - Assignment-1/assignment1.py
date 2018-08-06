@@ -23,13 +23,13 @@ and remaining balance. At the end of 12 months, print out the remaining
 @author: Someshwar95
 '''
 
-def payingdebtoffin_ayear(balance, annualinterest_Rate, monthlypayment_rate):
+def payingdebtoffin_ayear(balance, annualinterest_rate, monthlypayment_rate):
     '''
     paying debt off in a year
     '''
     for i in range(12):
-        Monthlyunpaidbalance = (balance) - (monthlyPayment_Rate*balance)
-        Updatedbalanceeachmonth = (Monthlyunpaidbalance) + (annualInterest_Rate/12.0 * Monthlyunpaidbalance)
+        Monthlyunpaidbalance = (balance) - (monthlypayment_rate*balance)
+        Updatedbalanceeachmonth = (Monthlyunpaidbalance) + (annualinterest_rate/12.0 * Monthlyunpaidbalance)
         balance = Updatedbalanceeachmonth
     return round(Updatedbalanceeachmonth,2)
 
