@@ -19,28 +19,28 @@
 '''
 
 def payingDebtOffInAYear(balance_, annualInterestRate):
-	if balance_ < 0:
-		return 0
-	pem_ = 10
-	while True:
-		ti_ = 0
-		balance2_ = balance_
-		while ti_ != 12:
-			unbalance_ = balance2_-(pem_)
-			balance2_=unbalance_+(unbalance_*annualInterestRate_/12)
-			ti_ = ti_+1
-		if bal2_ <= 0.5:
-			break
-		pem_ = pem_+10
-	return pem_
-		
-	
+    if balance_ < 0:
+        return 0
+    pem_ = 10
+    while True:
+        ti_ = 0
+        balance2_ = balance_
+        while ti_ != 12:
+            unbalance_ = balance2_-(pem_)
+            balance2_=unbalance_+(unbalance_*annualInterestRate_/12)
+            ti_ = ti_+1
+        if bal2_ <= 0.5:
+            break
+        pem_ = pem_+10
+    return pem_
+        
+    
 
 def main():
-	data = input()
-	data = data.split(' ')
-	data = list(map(float, data))
-	print("Lowest payment: "+str(payingDebtOffInAYear(data[0],data[1]))
-	
+    data = input()
+    data = data.split(' ')
+    data = list(map(float, data))
+    print("Lowest payment: "+str(payingDebtOffInAYear(data[0],data[1]))
+    
 if __name__ == "__main__":
-	main()
+    main()
