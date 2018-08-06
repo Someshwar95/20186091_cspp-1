@@ -13,7 +13,8 @@ and remaining balance. At the end of 12 months, print out the remaining
 # Remaining balance: 813.41
 # instead of
 # Remaining balance: 813.4141998135
-# So your program only prints out one thing: the remaining balance at the end of the year in the format:
+# So your program only prints out one thing:
+the remaining balance at the end of the year in the format:
 # Remaining balance: 4784.0
 # A summary of the required math is found below:
 # Monthly interest rate= (Annual interest rate) / 12.0
