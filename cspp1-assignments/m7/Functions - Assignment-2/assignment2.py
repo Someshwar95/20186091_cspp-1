@@ -31,7 +31,7 @@ def payingDebtOffInAYear(balance, annualInterestRate):
 			time = time+1
 		if balance2 <= 0.5:
 			break
-			pem=pem+10
+		pem=pem+10
 	return pem
 		
 	
