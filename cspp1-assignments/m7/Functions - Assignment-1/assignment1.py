@@ -30,7 +30,7 @@ def payingdebtoffin_ayear(balance, annualinterest_rate, monthlypayment_rate):
     '''
     for i in range(12):
         monthlyunpaid_balance = (balance) - (monthlypayment_rate*balance)
-        updatedbalanceeach_month = (Monthlyunpaidbalance) + (annualinterest_rate/12.0 * Monthlyunpaidbalance)
+        updatedbalanceeach_month = (monthlyunpaid_balance) + (annualinterest_rate/12.0 * monthlyunpaid_balance)
         balance = Updatedbalanceeachmonth
     return round(Updatedbalanceeachmonth, 2)
 
