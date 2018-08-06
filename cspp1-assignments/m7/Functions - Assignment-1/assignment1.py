@@ -23,7 +23,7 @@ and remaining balance. At the end of 12 months, print out the remaining
 @author: Someshwar95
 '''
 
-def payingDebtOffIn_AYear(balance, annualInterest_Rate, monthlyPayment_Rate):
+def payingdebtoffin_ayear(balance, annualinterest_Rate, monthlypayment_rate):
     '''
     paying debt off in a year
     '''
