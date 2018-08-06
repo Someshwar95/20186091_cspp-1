@@ -28,7 +28,7 @@ def payingDebtOffInAYear(balance, annualInterestRate):
 		while time != 12:
 			unpaidbalance = balance2-(pem)
 			balance2 = unpaidbalance+(unpaidbalance*annualInterestRate/12)
-			time time+1
+			time = time+1
 		if balance2 <= 0.5:
 			break
 			pem=pem+10
