@@ -18,21 +18,21 @@
 # Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
 '''
 
-def payingDebtOffInAYear(balance, annualInterestRate):
-	if balance < 0:
+def payingDebtOffInAYear(balance_, annualInterestRate):
+	if balance_ < 0:
 		return 0
-	pem = 10
+	pem_ = 10
 	while True:
-		time = 0
-		balance2 = balance
-		while time != 12:
-			unpaidbalance = balance2-(pem)
-			balance2 = unpaidbalance+(unpaidbalance*annualInterestRate/12)
-			time = time+1
-		if balance2 <= 0.5:
+		ti_ = 0
+		balance2_ = balance_
+		while ti_ != 12:
+			unbalance_ = balance2_-(pem_)
+			balance2_=unbalance_+(unbalance_*annualInterestRate_/12)
+			ti_ = ti_+1
+		if bal2_ <= 0.5:
 			break
-		pem=pem+10
-	return pem
+		pem_ = pem_+10
+	return pem_
 		
 	
 
