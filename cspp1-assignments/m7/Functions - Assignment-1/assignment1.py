@@ -24,6 +24,9 @@ and remaining balance. At the end of 12 months, print out the remaining
 '''
 
 def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
+    '''
+    paying debt off in a year
+    '''
     for i in range(12):
         Monthlyunpaidbalance = (balance) - (monthlyPaymentRate*balance)
         Updatedbalanceeachmonth = (Monthlyunpaidbalance) + (annualInterestRate/12.0 * Monthlyunpaidbalance)
@@ -31,6 +34,9 @@ def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
     return round(Updatedbalanceeachmonth,2)
 
 def main():
+    '''
+    remaining balance
+    '''
     data = input()
     data = data.split(' ')
     data = list(map(float, data))
