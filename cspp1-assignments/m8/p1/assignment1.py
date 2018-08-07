@@ -6,15 +6,15 @@ number and returns the factorial of given number.
 @author: Someshwar95
 '''
 
-def factorial(n):
+def factorial(n_fact):
     '''
     n is positive Integer
     returns: a positive integer, the factorial of n.
     '''
-    if n == 1:
+    if n_fact == 1:
         return 1
     else:
-        return n * factorial(n-1)
+        return n_fact * factorial(n_fact-1)
 
 def main():
     '''
