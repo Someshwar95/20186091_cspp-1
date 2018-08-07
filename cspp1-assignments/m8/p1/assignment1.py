@@ -6,7 +6,6 @@ number and returns the factorial of given number.
 @author: Someshwar95
 '''
 
-
 def factorial(n):
     '''
     n is positive Integer
@@ -17,12 +16,9 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-
-
-
 def main():
     a = input()
     print(factorial(int(a)))    
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
