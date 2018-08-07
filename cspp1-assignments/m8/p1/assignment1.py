@@ -17,6 +17,9 @@ def factorial(n):
         return n * factorial(n-1)
 
 def main():
+    '''
+    factorial of n
+    '''
     a = input()
     print(factorial(int(a)))    
 
