@@ -20,8 +20,8 @@ def main():
     '''
     factorial of n
     '''
-    a = input()
-    print(factorial(int(a)))    
+    a_ = input()
+    print(factorial(int(a_)))    
 
 if __name__ == "__main__":
     main()
