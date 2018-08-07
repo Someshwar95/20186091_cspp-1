@@ -20,7 +20,7 @@ def main():
     sum of digits
     '''
     a = input()
-    print(sumofdigits(int(a)))  
+    print(sumofdigits(int(a)))
 
 if __name__== "__main__":
     main()
