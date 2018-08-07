@@ -38,6 +38,8 @@
 
 
 def payingDebtOffInAYear(balance, annualInterestRate):
+	monthlyinterestrate = (annualInterestRate) / 12.0
+	monthlypayment
 
 
 def main():
