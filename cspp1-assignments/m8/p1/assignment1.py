@@ -21,7 +21,7 @@ def main():
     factorial of n
     '''
     a_case = input()
-    print(factorial(int(a_case)))    
+    print(factorial(int(a_case)))
 
 if __name__ == "__main__":
     main()
