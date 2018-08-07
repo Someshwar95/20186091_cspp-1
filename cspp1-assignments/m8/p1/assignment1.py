@@ -11,7 +11,7 @@ def factorial(n_fact):
     n is positive Integer
     returns: a positive integer, the factorial of n.
     '''
-    if n_fact in (0,1):
+    if n_fact in (0, 1):
         return 1
     else:
         return n_fact * factorial(n_fact-1)
