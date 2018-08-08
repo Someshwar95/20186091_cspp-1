@@ -18,8 +18,9 @@ def is_word_guessed(secret_word, letters_guessed):
     a = secret_word
     b = letters_guessed
     if a in b:
+    	return True
 
-    return a == b
+     
 
 def main():
     '''
