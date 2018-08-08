@@ -21,7 +21,7 @@ def get_guessed_word(secret_word, letters_guessed):
     	else:
     		str += char
 
-    print(str)
+    return str
     
 
 def main():
