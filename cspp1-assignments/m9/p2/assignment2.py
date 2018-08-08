@@ -19,7 +19,7 @@ def get_guessed_word(secret_word, letters_guessed):
     	if char in letters_guessed:
     		secret_word += '_'
 
-    return (secret_word)
+    return secret_word
     
 
 def main():
