@@ -15,12 +15,10 @@ def is_word_guessed(secret_word, letters_guessed):
       False otherwise
     '''
     # FILL IN YOUR CODE HERE...
-    if secret_word in letters_guessed:
-    	return True
-    elif secret_word not in letters_guessed:
-    	return True
-    else:
-    	return False 
+    for i in secret_word:
+    	if i not in letters_guessed:
+    		return False
+    return True
 
 
      
