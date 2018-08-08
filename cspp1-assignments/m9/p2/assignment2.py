@@ -18,7 +18,8 @@ def get_guessed_word(secret_word, letters_guessed):
     for char in secret_word:
     	if char in letters_guessed:
     		secret_word += '_'
-    print(secret_word)
+
+    return (secret_word)
     
 
 def main():
