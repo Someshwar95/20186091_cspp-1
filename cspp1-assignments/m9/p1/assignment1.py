@@ -19,8 +19,8 @@ def is_word_guessed(secret_word, letters_guessed):
     	return True
     elif secret_word not in letters_guessed:
     	return True
-    #else:
-    	#return False 
+    else:
+    	return False 
 
 
      
