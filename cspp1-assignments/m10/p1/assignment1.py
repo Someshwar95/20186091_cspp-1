@@ -1,19 +1,19 @@
 '''
 Exercise : Assignment-1
 implement the function get_available_letters that takes in one parameter -
-a list of letters, letters_guessed. This function returns a string
+a list of letters letters_guessed. This function returns a string
 that is comprised of lowercase English letters - all lowercase English letters
 that are not in letters_guessed
 '''
 
 def get_available_letters(letters_guessed):
     '''
-    :param letters_guessed: list, what letters have been guessed so far
-    returns: string, comprised of letters that represents what letters have not
+    :param letters_guessed: list what letters have been guessed so far
+    returns: string comprised of letters that represents what letters have not
       yet been guessed.
     '''
     str_alpha = ""
-    str_alp = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"
+    str_alp = "abcdefghijklmnopqrstuvwxyz"
     for i in letters_guessed:
         if i not in str_alp:
             str_alp += str_alpha
