@@ -50,7 +50,8 @@ def main():
     for i in range(lines):
         i += 1
         string += input().split(" ")
-        string += '\n'
+        #string += '\n'
+        d_so.extend(string)
 
     print(create_social_network(string))
 
