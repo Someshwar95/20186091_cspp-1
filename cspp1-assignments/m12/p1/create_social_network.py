@@ -48,8 +48,10 @@ def main():
     string = ''
     lines = int(input())
     for i in range(lines):
-        i += 1
-        string += input()
+        data_input = input().split(" ")
+        string.extend(data_input)
+        #i += 1
+        #string += input()
         #string += '\n'
 
     print(create_social_network(string))
