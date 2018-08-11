@@ -48,8 +48,8 @@ def main():
     string = ''
     lines = int(input())
     for i in range(lines):
-        #i += 1
-        string += input().split(" ")
+        i += 1
+        string += str(input()).split(" ")
         #string += '\n'
         string.extend(string)
 
