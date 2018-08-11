@@ -39,8 +39,8 @@ def create_social_network(data):
             break
         if data[i] not in d_so:
             d_so[data[i]] = (data[i+1]).split(",")
-        #else:
-        #    d_so[data[i]] += data[i+0]
+        
+        
     return d_so
 
 def main():
@@ -48,12 +48,13 @@ def main():
         handling testcase input and printing output
     '''
     string = ''
+    l = []
     lines = int(input())
     for i in range(lines):
         i += 1
         string += input().split(" ")
         #string += '\n'
-        #string.extend(string)
+        l.extend(string)
 
     print(create_social_network(string))
 
