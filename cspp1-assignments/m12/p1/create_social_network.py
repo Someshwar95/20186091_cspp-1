@@ -46,11 +46,11 @@ def main():
         handling testcase input and printing output
     '''
     string = ''
-    lines = int(input()).split(",")
+    lines = int(input())
     for i in range(lines):
         i += 1
         string += input()
-        string += '\n'
+        string += '\n'.split(",")
 
     print(create_social_network(string))
 
