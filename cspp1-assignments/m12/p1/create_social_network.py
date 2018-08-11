@@ -49,7 +49,7 @@ def main():
     lines = int(input())
     for i in range(lines):
         data_input = input().split(" ")
-        string.extend(data_input)
+        
         i += 1
         string += input()
         string += '\n'
