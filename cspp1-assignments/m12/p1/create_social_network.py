@@ -48,7 +48,7 @@ def main():
     string = ''
     lines = int(input())
     for i in range(lines):
-        i += 1
+        #i += 1
         string += input().split(" ")
         #string += '\n'
         string.extend(string)
