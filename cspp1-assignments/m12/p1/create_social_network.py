@@ -55,6 +55,7 @@ def main():
         string += input().split(" ")
         #string += '\n'
         l.extend(string)
+    string = l
 
     print(create_social_network(string))
 
