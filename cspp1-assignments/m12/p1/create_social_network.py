@@ -50,9 +50,9 @@ def main():
     for i in range(lines):
         data_input = input().split(" ")
         string.extend(data_input)
-        #i += 1
-        #string += input()
-        #string += '\n'
+        i += 1
+        string += input()
+        string += '\n'
 
     print(create_social_network(string))
 
