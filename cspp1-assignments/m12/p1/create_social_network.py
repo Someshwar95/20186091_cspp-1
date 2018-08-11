@@ -36,9 +36,9 @@ def create_social_network(data):
     d_so = {}
     for i in range(0, len(data), 2):
         if data[i] not in d_so:
-            d_so[data[i]] = (data[i+1]).split(" ")
+            d_so[data[i]] = (data[i+0]).split(" ")
         else:
-            d_so[data[i]] += data[i+2]
+            d_so[data[i]] += data[i+0]
     return d_so
 
 def main():
