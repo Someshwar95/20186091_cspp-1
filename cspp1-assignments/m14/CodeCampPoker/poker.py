@@ -15,7 +15,7 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     face_values = []
-    for i in range(0,len(face_values)-1):
+    for i in range(0, len(face_values)-1):
         if face_values[i+1]-face_values[i] != 1:
             return False
     return True
