@@ -35,7 +35,7 @@ def is_flush(hand):
         if suit[1] != f[1]:
             return False
     return True
-    
+
 
 def hand_rank(hand):
     '''
@@ -102,4 +102,3 @@ if __name__ == "__main__":
         #print(HANDS)
     # test the poker function to see how it works
     print(' '.join(poker(HANDS)))
-
