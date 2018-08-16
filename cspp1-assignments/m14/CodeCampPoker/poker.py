@@ -17,7 +17,7 @@ def is_straight(hand):
     for i in hand:
 
         #if i not in int(input()):
-        if i not in 'D, S, H, D, C':
+        if i not in '10D, 9S, 8H, 7D, 6C':
 
             return False
     else:
