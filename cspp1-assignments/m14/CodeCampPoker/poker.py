@@ -16,7 +16,7 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    hand = []
+    han = []
     for s_st in hand:
         hand.append(card_values[s_st[0]])
     hand.sort()
