@@ -14,15 +14,10 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    for i in hand:
-
-        #if i not in int(input()):
-        if i not in '10D, 9S, 8H, 7D, 6C':
-
+    for i in range(0,len(face_values)-1):
+        if face_values[i+1]-face_values[i] != 1:
             return False
-    else:
-
-        return True
+    return True
 
 def is_flush(hand):
     '''
@@ -33,11 +28,13 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    for i in hand:
-        if i not in 'JD, 9D, 8D, 4D, 3D':
+    #print(hand[0])
+    suit = hand[0]
+    for f in hand:
+        if suit[1] != f[1]:
             return False
-    else:
-        return True
+    return True
+    
 
 def hand_rank(hand):
     '''
@@ -63,7 +60,7 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    if is_straight or is_flush:
+    if is_straight and is_flush:
         return 3
     elif is_flush:
         return 2
@@ -101,6 +98,7 @@ if __name__ == "__main__":
         line = input()
         ha = line.split(" ")
         HANDS.append(ha)
+        #print(HANDS)
     # test the poker function to see how it works
     print(' '.join(poker(HANDS)))
 
