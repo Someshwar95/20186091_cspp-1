@@ -23,7 +23,7 @@ def is_straight(hand):
     for i in range(0, len(hand)-1):
         if hand[i+1]-hand[i] != 1:
             return False
-    return True
+        return True
 
 def is_flush(hand):
     '''
