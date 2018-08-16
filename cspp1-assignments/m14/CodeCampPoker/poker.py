@@ -34,7 +34,7 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     for i in hand:
-        if i not in 'J, D, D, D, D':
+        if i not in 'JD, 9D, 8D, 4D, 3D':
             return False
     else:
         return True
