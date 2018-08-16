@@ -20,6 +20,7 @@ def is_straight(hand):
     for s_st in hand:
         hand.append(card_values[s_st[0]])
     hand.sort()
+    print(hand)
     for i in range(0, len(hand)-1):
         if hand[i+1]-hand[i] != 1:
             return False
