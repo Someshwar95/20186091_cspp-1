@@ -31,8 +31,8 @@ def is_flush(hand):
     '''
     #print(hand[0])
     suit = hand[0]
-    for f in hand:
-        if suit[1] != f[1]:
+    for f_l in hand:
+        if suit[1] != f_l[1]:
             return False
     return True
 
