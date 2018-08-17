@@ -87,13 +87,15 @@ def hand_rank(hand):
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
     if is_straight(hand) and is_flush(hand):
-        return 7
+        return 8
     elif is_four_of_a_kind(hand):
-        return 6
-    elif is_flush(hand):
-        return 5
-    elif is_straight(hand):
         return 4
+    elif is_three_of_a_kind(hand) and is_one_pair(hand):
+        return 7
+    elif is_flush(hand):
+        return 6
+    elif is_straight(hand):
+        return 5
     elif is_three_of_a_kind(hand):
         return 3
     elif is_two_pair(hand):
