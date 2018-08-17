@@ -88,10 +88,11 @@ def is_three_of_a_kind(hand):
     '''
     three cards of same rank and two cards of other ranks
     '''
-    for i in range(len(hand)-2):
-        if hand[i] == hand[i+1] == hand[i+2]:
-            return True
-        return False
+    cnt = 0
+    for i in range(len(hand)-1):
+        if hand[i+1] == hand[i]:
+            cnt += 1
+    return cnt==2
 
 def is_one_pair(hand):
     '''
