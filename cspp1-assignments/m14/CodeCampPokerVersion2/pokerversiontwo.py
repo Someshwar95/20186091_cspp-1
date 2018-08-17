@@ -20,7 +20,8 @@ def is_one_pair(hand):
         return True
     return False
 
-def is_full_house(hand):
+#def is_full_house(hand):
+
     
 def is_two_pair(hand):
     if len(hand) - len(set(hand)) == 2:
