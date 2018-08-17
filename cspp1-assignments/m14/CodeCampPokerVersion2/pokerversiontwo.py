@@ -20,7 +20,7 @@ def is_one_pair(hand):
         return True
     return False
 
-#def is_full_house(hand):
+
 
     
 def is_two_pair(hand):
@@ -93,8 +93,6 @@ def hand_rank(hand):
         return 8
     elif is_four_of_a_kind(hand):
         return 7
-    elif is_full_house(hand):
-        return 6
     elif is_flush(hand):
         return 5
     elif is_straight(hand):
