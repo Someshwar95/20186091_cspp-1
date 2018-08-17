@@ -5,39 +5,39 @@
 '''
 card_values = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7,\
     '8':8, '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
-def is_four_of_a_kind(hand):
-    '''
-    four cards of same rank and one card of another rank
-    '''
-    for i in range(len(hand)-3):
-        if hand[i] == hand[i+1] == hand[i+2] == hand[i+3]:
-            return True
+# def is_four_of_a_kind(hand):
+#     '''
+#     four cards of same rank and one card of another rank
+#     '''
+#     for i in range(len(hand)-3):
+#         if hand[i] == hand[i+1] == hand[i+2] == hand[i+3]:
+#             return True
 
-def is_three_of_a_kind(hand):
-    '''
-    three cards of same rank and two cards of other ranks
-    '''
-    for i in range(len(hand)-2):
-        if hand[i] == hand[i+1] == hand[i+2]:
-            return True
-        return False
+# def is_three_of_a_kind(hand):
+#     '''
+#     three cards of same rank and two cards of other ranks
+#     '''
+#     for i in range(len(hand)-2):
+#         if hand[i] == hand[i+1] == hand[i+2]:
+#             return True
+#         return False
 
-def is_one_pair(hand):
-    '''
-    two cards of same rank and three cards of other three ranks
-    '''
-    if len(hand) - len(set(hand)) == 1:
-        return True
-    return False
+# def is_one_pair(hand):
+#     '''
+#     two cards of same rank and three cards of other three ranks
+#     '''
+#     if len(hand) - len(set(hand)) == 1:
+#         return True
+#     return False
 
-def is_two_pair(hand):
-    '''
-    two cards of same rank and two cards of another rank
-    and one card of third rank
-    '''
-    if len(hand) - len(set(hand)) == 2:
-        return True
-    return False
+# def is_two_pair(hand):
+#     '''
+#     two cards of same rank and two cards of another rank
+#     and one card of third rank
+#     '''
+#     if len(hand) - len(set(hand)) == 2:
+#         return True
+#     return False
 
 def is_straight(hand):
     '''
@@ -75,6 +75,39 @@ def is_flush(hand):
             return False
     return True
 
+def is_four_of_a_kind(hand):
+    '''
+    four cards of same rank and one card of another rank
+    '''
+    for i in range(len(hand)-3):
+        if hand[i] == hand[i+1] == hand[i+2] == hand[i+3]:
+            return True
+
+def is_three_of_a_kind(hand):
+    '''
+    three cards of same rank and two cards of other ranks
+    '''
+    for i in range(len(hand)-2):
+        if hand[i] == hand[i+1] == hand[i+2]:
+            return True
+        return False
+
+def is_one_pair(hand):
+    '''
+    two cards of same rank and three cards of other three ranks
+    '''
+    if len(hand) - len(set(hand)) == 1:
+        return True
+    return False
+
+def is_two_pair(hand):
+    '''
+    two cards of same rank and two cards of another rank
+    and one card of third rank
+    '''
+    if len(hand) - len(set(hand)) == 2:
+        return True
+    return False
 
 def hand_rank(hand):
     '''
