@@ -89,7 +89,7 @@ def is_three_of_a_kind(hand):
     three cards of same rank and two cards of other ranks
     '''
     cnt = 0
-    for i in range(len(hand)):
+    for i in range(len(hand)-1):
         if hand[i+1] == hand[i]:
             cnt += 1
     return cnt==2
