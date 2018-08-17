@@ -9,6 +9,10 @@ def is_four_of_a_kind(hand):
     face_values = get_face_values(hand)
     face_values.sort()
     return len(set(face_values[:-1])) == 1 or len(set(face_values[:-4])) == 1
+def is_three_of_a_kind(hand):
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 3
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
