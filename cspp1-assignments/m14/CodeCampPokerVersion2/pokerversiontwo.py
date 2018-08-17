@@ -92,7 +92,7 @@ def is_three_of_a_kind(hand):
     for i in range(len(hand)-1):
         if hand[i+1] == hand[i]:
             cnt += 1
-    return cnt==2
+    return cnt==3
 
 def is_one_pair(hand):
     '''
