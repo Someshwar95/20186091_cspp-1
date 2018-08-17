@@ -6,22 +6,38 @@
 card_values = {'2':2, '3':3, '4':4, '5':5, '6':6, '7':7,\
     '8':8, '9':9, 'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
 def is_four_of_a_kind(hand):
+    '''
+    four cards of same rank and one card of another rank
+    '''
     face_values = get_face_values(hand)
     face_values.sort()
     return len(set(face_values[:-1])) == 1 or len(set(face_values[:-4])) == 1
 def is_three_of_a_kind(hand):
+    '''
+    three cards of same rank and two cards of other ranks
+    '''
     face_values = get_face_values(hand)
     face_values.sort()
     return len(set(face_values)) == 3
 def is_one_pair(hand):
+    '''
+    two cards of same rank and three cards of other three ranks
+    '''
     face_values = get_face_values(hand)
     face_values.sort()
     return len(set(face_values)) == 4
 def is_two_pair(hand):
+    '''
+    two cards of same rank and two cards of another rank
+    and one card of third rank
+    '''
     face_values = get_face_values(hand)
     face_values.sort()
     return len(set(face_values)) == 3 and (len(set(face_values[:2]==1)) or len(set(face_values[:1]==1)))
 def is_full_house(hand):
+    '''
+    Three cards of one rank and two cards of another rank
+    '''
     face_values = get_face_values(hand)
     face_values.sort()
     return len(set(face_values)) == 2
