@@ -55,7 +55,7 @@ class Message():
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words
         '''
-        
+
         self.message_text = text
         self.valid_words = load_words("words.txt")
         self.shift_dict = {}
