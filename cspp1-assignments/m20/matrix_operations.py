@@ -44,8 +44,8 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
-    m1 = read_matrix(input())
-    m2 = read_matrix(input())
+    m1 = read_matrix(input().split(','))
+    m2 = read_matrix(input().split(','))
     for i in range(len(m1)):
         for j in range(len(m1[0])):
             result[i][j] = m1[i][j] + m2[i][j]
