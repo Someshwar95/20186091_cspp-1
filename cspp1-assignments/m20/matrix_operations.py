@@ -11,7 +11,7 @@ def mult_matrix(matrix_one, matrix_two):
     mult_matrix = generate_resultant_matrix(rows, columns)
 
 def generate_resultant_matrix(rows, columns):
-    add_matrix = [[0] * columns] * rows
+    add_matrix = [[0 for i in range(columns)] for j in range(rows)]
     return add_matrix
 
 def add_matrix(matrix_one, matrix_two):
@@ -25,6 +25,7 @@ def add_matrix(matrix_one, matrix_two):
     rows = len(matrix_one)
     columns = len(matrix_one[0])
     add_matrix = generate_resultant_matrix(rows, columns)
+    
 
     #print(add_matrix)
 
@@ -61,10 +62,10 @@ def main():
 
     # read matrix 2
     matrix_two = read_matrix()
-    print(matrix_one, matrix_two)
+    #print(matrix_one, matrix_two)
 
     # add matrix 1 and matrix 2
-    add_matrix(matrix_one, matrix_two)
+    print(add_matrix(matrix_one, matrix_two))
 
     # multiply matrix 1 and matrix 2
     mult_matrix(matrix_one, matrix_two)
