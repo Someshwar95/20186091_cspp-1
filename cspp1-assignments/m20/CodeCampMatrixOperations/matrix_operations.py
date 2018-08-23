@@ -1,4 +1,4 @@
-def mult_matrix(matrix_one, matrix_two):
+def mult_matrix(matrix1_var, matrix2_var):
     '''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
@@ -6,32 +6,22 @@ def mult_matrix(matrix_one, matrix_two):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    #rows = len(matrix_one)
-    #columns = len(matrix_two)
-    mult_matrix = generate_resultant_matrix(rows, columns)
-    if len(matrix_one[0]) == len(matrix_two):
-        for i in range(len(matrix_one)):
-            for j in range(len(matrix_two[0])):
-                for k in range(len(matrix_two)):
-                    mult_matrix[i][j] += matrix_one[i][k] * matrix_two[k][j]
-        return mult_matrix
-    else:
-        print("Error: Matrix shapes invalid for mult")
-        return None 
+    # rows = len(m1)
+    # columns = len(m2[0])
+    # multi_matrix = [[0 for i in range(columns)] for j in range(rows)]
+    # pass
+    add_ = re_mat(len(matrix1_var), len(matrix2_var[0]))
+    if len(matrix1_var[0]) == len(matrix2_var):
+        for row_ in range(len(matrix1_var)):
+            for col_ in range(len(matrix2_var[0])):
+                for com_ in range(len(matrix2_var)):
+                    add_[row_][col_] += matrix1_var[row_][com_] * matrix2_var[com_][col_]
+        return add_
+    
+    print("Error: Matrix shapes invalid for mult")
+    return None
 
-def generate_resultant_matrix(rows, columns):
-    add_matrix = []
-    for j in range(rows):
-        add_matrix.append([])
-        for i in range(columns):
-            add_matrix.append([0])
-    return add_matrix
-
-def read_matrix(rows, columns):
-    add_matrix = [[0 for i in range(columns)] for j in range(rows)]
-    return add_matrix
-
-def add_matrix(matrix_one, matrix_two):
+def add_matrix(matrix1_var, matrix2_var):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
@@ -39,29 +29,18 @@ def add_matrix(matrix_one, matrix_two):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    add_matrix1 = generate_resultant_matrix(len(matrix_one),len(matrix_one[0]))
-    if len(matrix_one) == len(matrix_two) and len(matrix_one[0]) == len(matrix_two[0]):
-        for i in range(len(matrix_one)):
-            for j in range(len(matrix_one[0])):
-                add_matrix1[i][j] += (matrix_one[i][j] + matrix_two[i][j])
-        return add_matrix1
-    else:
-        print("Error: Matrix shapes invalid for addition")
-        return None
+    add_ = re_mat(len(matrix1_var), len(matrix1_var[0]))
+    if len(matrix1_var) == len(matrix2_var) and len(matrix1_var[0]) == len(matrix2_var[0]):
+        for i in range(len(matrix1_var)):
+            for j in range(len(matrix1_var[0])):
+                add_[i][j] += (matrix1_var[i][j] + matrix2_var[i][j])
+        return add_
 
-    # rows = len(matrix_one)
-    # columns = len(matrix_one[0])
-    # add_matrix = generate_resultant_matrix(rows, columns)
-    
-
-
-    #print(add_matrix)
-
-
-    #if len(matrix_one) == len(matrix_two) and len(matrix_one[0]) == len(matrix_two[0]):
-
-    #else:
-        #print("Error: Matrix shapes invalid for addition")
+    print("Error: Matrix shapes invalid for addition")
+    return None
+def re_mat(rows, columns):
+    add_matrix = [[0 for i in range(columns)] for j in range(rows)]
+    return add_matrix
 
 def read_matrix():
     '''
@@ -83,24 +62,24 @@ def read_matrix():
             return None
     return matrix
 
-
 def main():
     # read matrix 1
     matrix_one = read_matrix()
     if matrix_one is None:
         exit()
 
-    # read matrix 2
+     # read matrix 2
     matrix_two = read_matrix()
     if matrix_two is None:
         exit()
-    #print(matrix_one, matrix_two)
 
     # add matrix 1 and matrix 2
+
     print(add_matrix(matrix_one, matrix_two))
 
     # multiply matrix 1 and matrix 2
-    mult_matrix(matrix_one, matrix_two)
+
+    print(mult_matrix(matrix_one, matrix_two))
 
 if __name__ == '__main__':
     main()
