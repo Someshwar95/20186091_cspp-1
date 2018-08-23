@@ -35,10 +35,19 @@ def add_matrix(matrix_one, matrix_two):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    rows = len(matrix_one)
-    columns = len(matrix_one[0])
-    add_matrix = generate_resultant_matrix(rows, columns)
-    if len(ma)
+    add_matrix = read_matrix(len(matrix_one), len(matrix_one[0]))
+    if len(matrix_one) == len(matrix_two) and len(matrix_one[0]) == len(matrix_two[0]):
+        for i in range(len(matrix_one)):
+            for j in range(len(matrix_one[0])):
+                add_matrix[i][j] += (matrix_one[i][j] + matrix_two[i][j])
+        return add_matrix
+    else:
+        print("Error: Matrix shapes invalid for addition")
+        return None
+    # rows = len(matrix_one)
+    # columns = len(matrix_one[0])
+    # add_matrix = generate_resultant_matrix(rows, columns)
+    
 
 
     #print(add_matrix)
