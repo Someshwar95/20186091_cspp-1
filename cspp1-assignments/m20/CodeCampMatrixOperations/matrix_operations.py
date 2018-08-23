@@ -44,6 +44,10 @@ def add_matrix(matrix_one, matrix_two):
     else:
         print("Error: Matrix shapes invalid for addition")
         return None
+def read_matrix(rows, columns):
+    add_matrix = [[0 for i in range(columns)] for j in range(rows)]
+    return add_matrix
+
     # rows = len(matrix_one)
     # columns = len(matrix_one[0])
     # add_matrix = generate_resultant_matrix(rows, columns)
