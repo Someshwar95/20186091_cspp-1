@@ -63,6 +63,9 @@ def read_matrix():
     return matrix
 
 def main():
+    '''
+    reading matrix
+    '''
     # read matrix 1
     matrix_one = read_matrix()
     if matrix_one is None:
