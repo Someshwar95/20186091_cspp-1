@@ -9,9 +9,22 @@ def mult_matrix(matrix_one, matrix_two):
     rows = len(matrix_one)
     columns = len(matrix_two)
     mult_matrix = generate_resultant_matrix(rows, columns)
+    if len(matrix_one[0]) == len(matrix_two):
+        for i in range(rows):
+            for j in range(len(matrix_two[0])):
+                for k in range(len(matrix_two)):
+                    mult_matrix[i][j] += matrix_one[i][k] * matrix_two[k][j]
+        return mult_matrix
+    else:
+        print("Error: Matrix shapes invalid for mult")
+        return None 
 
 def generate_resultant_matrix(rows, columns):
-    add_matrix = [[0 for i in range(columns)] for j in range(rows)]
+    add_matrix = []
+    for j in range(rows):
+        add_matrix.append([])
+        for i in range(columns):
+            add_matrix.append([0])
     return add_matrix
 
 def add_matrix(matrix_one, matrix_two):
@@ -25,7 +38,8 @@ def add_matrix(matrix_one, matrix_two):
     rows = len(matrix_one)
     columns = len(matrix_one[0])
     add_matrix = generate_resultant_matrix(rows, columns)
-    
+    if len(ma)
+
 
     #print(add_matrix)
 
@@ -59,9 +73,13 @@ def read_matrix():
 def main():
     # read matrix 1
     matrix_one = read_matrix()
+    if matrix_one is None:
+        exit()
 
     # read matrix 2
     matrix_two = read_matrix()
+    if matrix_two is None:
+        exit()
     #print(matrix_one, matrix_two)
 
     # add matrix 1 and matrix 2
@@ -69,7 +87,6 @@ def main():
 
     # multiply matrix 1 and matrix 2
     mult_matrix(matrix_one, matrix_two)
-
 
 if __name__ == '__main__':
     main()
