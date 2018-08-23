@@ -10,7 +10,7 @@ def mult_matrix(matrix1_var, matrix2_var):
     # columns = len(m2[0])
     # multi_matrix = [[0 for i in range(columns)] for j in range(rows)]
     # pass
-    add_ = re_mat(len(matrix1_var), len(matrix2_var[0]))
+    add_ = re_matrix(len(matrix1_var), len(matrix2_var[0]))
     if len(matrix1_var[0]) == len(matrix2_var):
         for row_ in range(len(matrix1_var)):
             for col_ in range(len(matrix2_var[0])):
@@ -29,7 +29,7 @@ def add_matrix(matrix1_var, matrix2_var):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    add_ = re_mat(len(matrix1_var), len(matrix1_var[0]))
+    add_ = re_matrix(len(matrix1_var), len(matrix1_var[0]))
     if len(matrix1_var) == len(matrix2_var) and len(matrix1_var[0]) == len(matrix2_var[0]):
         for i in range(len(matrix1_var)):
             for j in range(len(matrix1_var[0])):
@@ -38,7 +38,7 @@ def add_matrix(matrix1_var, matrix2_var):
 
     print("Error: Matrix shapes invalid for addition")
     return None
-def re_mat(rows, columns):
+def re_matrix(rows, columns):
     add_matrix = [[0 for i in range(columns)] for j in range(rows)]
     return add_matrix
 
