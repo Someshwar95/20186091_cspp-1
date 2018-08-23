@@ -9,7 +9,7 @@ def mult_matrix(matrix_one, matrix_two):
     rows = len(matrix_one)
     columns = len(matrix_two)
     mult_matrix = generate_resultant_matrix(rows, columns)
-    
+
 def generate_resultant_matrix(rows, columns):
     add_matrix = [[0] * columns] * rows
     return add_matrix
@@ -24,13 +24,13 @@ def add_matrix(matrix_one, matrix_two):
     '''
     rows = len(matrix_one)
     columns = len(matrix_one[0])
-    add_matrix = generate_resultant_matrix(rows, columns)    
+    add_matrix = generate_resultant_matrix(rows, columns)
 
     #print(add_matrix)
 
 
     #if len(matrix_one) == len(matrix_two) and len(matrix_one[0]) == len(matrix_two[0]):
-        
+
     #else:
         #print("Error: Matrix shapes invalid for addition")
 
