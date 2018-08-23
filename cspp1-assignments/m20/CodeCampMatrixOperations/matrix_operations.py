@@ -39,6 +39,9 @@ def add_matrix(matrix1_var, matrix2_var):
     print("Error: Matrix shapes invalid for addition")
     return None
 def resultant_matrix(rows, columns):
+    '''
+    resultant matrix
+    '''
     add_matrix = [[0 for i in range(columns)] for j in range(rows)]
     return add_matrix
 
