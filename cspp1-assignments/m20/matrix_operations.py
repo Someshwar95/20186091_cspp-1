@@ -34,7 +34,10 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    pass
+    read_matrix = input()
+    list = []
+    numbers = list(map(int, read_matrix.split()))
+
 
 def main():
     # read matrix 1
