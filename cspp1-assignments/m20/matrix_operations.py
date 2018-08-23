@@ -67,7 +67,7 @@ def main():
     add_matrix(matrix_one, matrix_two)
 
     # multiply matrix 1 and matrix 2
-    
+    mult_matrix(matrix_one, matrix_two)
 
 
 if __name__ == '__main__':
