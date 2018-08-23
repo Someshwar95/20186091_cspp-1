@@ -6,11 +6,11 @@ def mult_matrix(matrix_one, matrix_two):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    rows = len(matrix_one)
-    columns = len(matrix_two)
+    #rows = len(matrix_one)
+    #columns = len(matrix_two)
     mult_matrix = generate_resultant_matrix(rows, columns)
     if len(matrix_one[0]) == len(matrix_two):
-        for i in range(rows):
+        for i in range(len(matrix_one)):
             for j in range(len(matrix_two[0])):
                 for k in range(len(matrix_two)):
                     mult_matrix[i][j] += matrix_one[i][k] * matrix_two[k][j]
@@ -42,7 +42,7 @@ def add_matrix(matrix_one, matrix_two):
     add_matrix1 = generate_resultant_matrix(len(matrix_one),len(matrix_one[0]))
     if len(matrix_one) == len(matrix_two) and len(matrix_one[0]) == len(matrix_two[0]):
         for i in range(len(matrix_one)):
-            for j in range(len(matrix_two)):
+            for j in range(len(matrix_one[0])):
                 add_matrix1[i][j] = (matrix_one[i][j] + matrix_two[i][j])
         return add_matrix1
     else:
