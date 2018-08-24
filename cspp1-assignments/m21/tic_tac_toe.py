@@ -30,7 +30,7 @@ def winner_of_tic_tac_toe(tic_tac_toe):
 
 def main():
 	matrix = empty_tic_tac_toe()
-	matrix = valid_input(tic_tac_toe)
+	matrix = valid_input(matrix)
 	matrixo = winner_of_tic_tac_toe(tic_tac_toe)
 
 if __name__ == '__main__':
