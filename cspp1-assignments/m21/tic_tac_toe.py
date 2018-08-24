@@ -6,11 +6,13 @@ def empty_tic_tac_toe():
 	return matrix
 def valid_input(tic_tac_toe):
 	if sum(i.count('x') for i in tic_tac_toe) > 5 or sum(i.count('o') for i in tic_tac_toe) > 5:
-		return "invalid game"
+		print("invalid game")
+		return False
 	for i in range(len(empty_tic_tac_toe)):
 		for j in tic_tac_toe[i]:
 			if j not in 'xo.':
-				return "invalid input"
+				print("invalid input")
+				return False
 	return True
 def winner_of_tic_tac_toe(tic_tac_toe):
 	x = sum(i.count('x') for i in tic_tac_toe)
@@ -30,8 +32,8 @@ def winner_of_tic_tac_toe(tic_tac_toe):
 
 def main():
 	matrix = empty_tic_tac_toe()
-	matrix = valid_input(matrix)
-	matrixo = winner_of_tic_tac_toe(tic_tac_toe)
+	if valid_input(matrix):
+		print(winner_of_tic_tac_toe(matrix))
 
 if __name__ == '__main__':
     main()
