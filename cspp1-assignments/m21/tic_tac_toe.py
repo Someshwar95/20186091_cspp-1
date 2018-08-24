@@ -2,7 +2,7 @@ def empty_tic_tac_toe():
 	matrix = []
 	for i in range(3):
 		list_emp = input().split()
-		matrix.append()
+		matrix.append(list_emp)
 	return matrix
 def valid_input(tic_tac_toe):
 	if sum(i.count('x') for i in tic_tac_toe) > 5 or sum(i.count('o') for i in tic_tac_toe) > 5:
@@ -29,7 +29,7 @@ def winner_of_tic_tac_toe(tic_tac_toe):
 		return tic_tac_toe[0][2]
 
 def main():
-	matrix = (empty_tic_tac_toe()
+	matrix = empty_tic_tac_toe()
 	matrix.valid_input(tic_tac_toe)
 	matrixo = winner_of_tic_tac_toe(tic_tac_toe)
 
