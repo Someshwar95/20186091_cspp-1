@@ -8,7 +8,7 @@ def valid_input(tic_tac_toe):
 	if sum(i.count('x') for i in tic_tac_toe) > 5 or sum(i.count('o') for i in tic_tac_toe) > 5:
 		print("invalid game")
 		return False
-	for i in range(len(empty_tic_tac_toe)):
+	for i in range(len(tic_tac_toe)):
 		for j in tic_tac_toe[i]:
 			if j not in 'xo.':
 				print("invalid input")
