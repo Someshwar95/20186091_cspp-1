@@ -1,10 +1,16 @@
 def empty_tic_tac_toe():
+    '''
+    creating empty list for tic tac toe and appending input
+    '''
     matrix = []
     for i in range(3):
         list_emp = input().split()
         matrix.append(list_emp)
     return matrix
 def valid_input(tic_tac_toe):
+    '''
+    checking the input is valid or not
+    '''
     if sum(i.count('x') for i in tic_tac_toe) > 5 or sum(i.count('o') for i in tic_tac_toe) > 5 or \
     (sum(i.count('o') for i in tic_tac_toe) == sum(i.count('x') for i in tic_tac_toe)):
         print("invalid game")
@@ -16,6 +22,9 @@ def valid_input(tic_tac_toe):
                 return False
     return True
 def winner_of_tic_tac_toe(tic_tac_toe):
+    '''
+    checking for the winner of the game
+    '''
     x = sum(i.count('x') for i in tic_tac_toe)
     o = sum(i.count('o') for i in tic_tac_toe)
     if x + o == 9:
@@ -32,6 +41,9 @@ def winner_of_tic_tac_toe(tic_tac_toe):
         return tic_tac_toe[0][2]
 
 def main():
+    '''
+    calling the functions
+    '''
     matrix = empty_tic_tac_toe()
     if valid_input(matrix):
         print(winner_of_tic_tac_toe(matrix))
