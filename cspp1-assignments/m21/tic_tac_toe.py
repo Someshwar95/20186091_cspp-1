@@ -25,15 +25,15 @@ def winner_of_tic_tac_toe(tic_tac_toe):
     '''
     checking for the winner of the game
     '''
-    x = sum(i.count('x') for i in tic_tac_toe)
-    o = sum(i.count('o') for i in tic_tac_toe)
-    if x + o == 9:
+    x_co = sum(i.count('x') for i in tic_tac_toe)
+    o_co = sum(i.count('o') for i in tic_tac_toe)
+    if x_co + o_co == 9:
         return "draw"
-    elif x == 3:
+    elif x_co == 3:
         return "x"
-    elif o == 3:
+    elif o_co == 3:
         return "o"
-    elif x == 3 and o == 3:
+    elif x_co == 3 and o_co == 3:
         return "invalid game"
     elif tic_tac_toe[0][0] == tic_tac_toe[1][1] == tic_tac_toe[2][2]:
         return tic_tac_toe[0][0]
