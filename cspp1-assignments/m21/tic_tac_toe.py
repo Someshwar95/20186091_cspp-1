@@ -5,7 +5,8 @@ def empty_tic_tac_toe():
 		matrix.append(list_emp)
 	return matrix
 def valid_input(tic_tac_toe):
-	if sum(i.count('x') for i in tic_tac_toe) > 5 or sum(i.count('o') for i in tic_tac_toe) > 5:
+	if sum(i.count('x') for i in tic_tac_toe) > 5 or sum(i.count('o') for i in tic_tac_toe) > 5 or \
+	(sum(i.count('o') for i in tic_tac_toe) == sum(i.count('x') for i in tic_tac_toe)):
 		print("invalid game")
 		return False
 	for i in range(len(tic_tac_toe)):
