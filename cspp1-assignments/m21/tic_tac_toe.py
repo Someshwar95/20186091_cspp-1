@@ -29,7 +29,7 @@ def winner_of_tic_tac_toe(tic_tac_toe):
 		return tic_tac_toe[0][2]
 
 def main():
-	matrix = empty_tic_tac_toe(input())
+	matrix = print(empty_tic_tac_toe(input()))
 	matrixx = valid_input(tic_tac_toe)
 	matrixo = winner_of_tic_tac_toe(tic_tac_toe)
 
