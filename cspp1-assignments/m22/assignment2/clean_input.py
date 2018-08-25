@@ -5,7 +5,7 @@ alphabets in both upper and lower case and numbers.
 
 def clean_string(string):
 
-    ''.join(e for e in clean_string if e.isalnum())
+    ''.join(e for e in clean_string(string) if e.isalnum())
 
 def main():
     string = input()
