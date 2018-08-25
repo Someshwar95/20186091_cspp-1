@@ -4,9 +4,9 @@ alphabets in both upper and lower case and numbers.
 '''
 
 def clean_string(string):
-e=''
+    
     ''.join(e for e in string if e.isalnum())
-    print(e.isalnum())
+    
 
 def main():
     string = input()
