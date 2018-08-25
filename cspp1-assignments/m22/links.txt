@@ -1,1 +1,2 @@
 https://stackoverflow.com/questions/5843518/remove-all-special-characters-punctuation-and-spaces-from-string
+https://teamtreehouse.com/community/counting-words-in-a-string-using-a-dictionary-python-collection-challenge
