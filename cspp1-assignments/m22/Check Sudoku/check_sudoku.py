@@ -25,8 +25,8 @@ def check_sudoku(sudoku):
     for i in range(len(sudoku)):
         for j in sudoku[i]:
             if j not in '123456789':
-                #print("invalid input")
                 return False
+
     return True
 
 def main():
