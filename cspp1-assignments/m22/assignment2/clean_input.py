@@ -5,12 +5,10 @@ alphabets in both upper and lower case and numbers.
 special = '''!$#@'''
 def clean_string(string):
 out = ""
-	for char in input():
-		if char not in special:
-			out = out + char
-	print(out)
-
-    
+for char in input():
+	if char not in special:
+		out = out + char
+print(out)
 
 def main():
     string = input()
