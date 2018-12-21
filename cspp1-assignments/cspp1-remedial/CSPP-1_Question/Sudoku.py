@@ -26,9 +26,9 @@ def possiblechoice(a):
             if a[i][j] == '0':
                 s = create_set(a, i, j)
             if len(s) != 0:
-                for eaca in "123456789":
-                    if eaca not in s:
-                        result += eaca
+                for p in "123456789":
+                    if p not in s:
+                        result += p
                 print(result)
 
 if __name__ == "__main__":
