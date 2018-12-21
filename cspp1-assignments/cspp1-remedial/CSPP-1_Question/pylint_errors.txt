@@ -15,8 +15,9 @@ Sudoku.py:23:12: W0621: Redefining name 'j' from outer scope (line 40) (redefine
 Sudoku.py:25:12: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:27:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:29:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
-Sudoku.py:36:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
+Sudoku.py:42:16: E0602: Undefined variable 'grid' (undefined-variable)
+Sudoku.py:44:19: E0602: Undefined variable 'grid' (undefined-variable)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.14/10 (previous run: 4.86/10, +0.29)
+Your code has been rated at 2.57/10 (previous run: 5.14/10, -2.57)
 
