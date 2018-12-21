@@ -1,4 +1,4 @@
-def sud_oku(grd):
+def sudoku_grd(grd):
     for i in range(9):
         print(grd[i])
 def create_set(a, row, col):
