@@ -1,6 +1,6 @@
-def print_grid(grd): 
-    for i in range(9): 
-        print(grd[i]) 
+def print_grid(grd):
+    for i in range(9):
+        print(grd[i])
 def create_set(a, row, col):
     li_st= set()
     for i in range(9):
