@@ -4,6 +4,7 @@
 def print_sudoku(grd):
     for i in range(9):
         print(grd[i])
+        print('Given sudoku is solved')
 """
 creating a set
 """
