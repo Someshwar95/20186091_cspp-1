@@ -2,7 +2,8 @@ def findNextCellToFill(grid, i, j):
     for x in range(i,9):
         for y in range(j,9):
             if grid[x][y] == 0:
-                return x,y
+                print("Given sudoku is solved")
+                #return x,y
         for x in range(0,9):
             for y in range(0,9):
                 if grid[x][y] == 0:
