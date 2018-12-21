@@ -16,8 +16,7 @@ Sudoku.py:25:12: C0103: Variable name "s" doesn't conform to snake_case naming s
 Sudoku.py:27:16: C0103: Variable name "s" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:29:15: C1801: Do not use `len(SEQUENCE)` to determine if a sequence is empty (len-as-condition)
 Sudoku.py:36:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming style (invalid-name)
-Sudoku.py:37:4: C0103: Constant name "inp_ut" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.86/10 (previous run: 4.86/10, +0.00)
+Your code has been rated at 5.14/10 (previous run: 4.86/10, +0.29)
 

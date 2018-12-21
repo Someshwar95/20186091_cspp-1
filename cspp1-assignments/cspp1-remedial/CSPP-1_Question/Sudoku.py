@@ -34,12 +34,12 @@ def possiblechoice(a):
 
 if __name__ == "__main__":
     grid = [['0' for x in range(9)]for y in range(9)]
-    inp_ut = input()
+    INP_UT = input()
     k = 0
     for i in range(9):
         for j in range(9):
-            if inp_ut[k] != '.':
-                grid[i][j] = inp_ut[k]
+            if INP_UT[k] != '.':
+                grid[i][j] = INP_UT[k]
             k += 1
     possiblechoice(grid)
 
