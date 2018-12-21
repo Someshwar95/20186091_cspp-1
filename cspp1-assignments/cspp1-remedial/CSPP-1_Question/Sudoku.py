@@ -18,7 +18,7 @@ def isValid(grid, i, j, e):
         columnOk = all([e != grid[x][j] for x in range(9)])
         if columnOk:
             # finding the top left x,y co-ordinates of the section containing the i,j cell
-            secTopX, secTopY = 3 *(i//3), 3 *(j//3) #floored quotient should be used here. 
+            secTopX, secTopY = 3 *(i//3), 3 *(j//3) #floored quotient should be used here.
             for x in range(secTopX, secTopX+3):
                 for y in range(secTopY, secTopY+3):
                     if grid[x][y] == e:
@@ -29,18 +29,18 @@ def isValid(grid, i, j, e):
             #return False
             print("Given sudoku is solved")
 
-    def solveSudoku(grid, i=0, j=0):
-        i,j = findNextCellToFill(grid, i, j)
-        if i == -1:
+def solveSudoku(grid, i=0, j=0):
+    i,j = findNextCellToFill(grid, i, j)
+    if i == -1:
             #return True
-            print("Given sudoku is solved")
-            for e in range(1,10):
-                if isValid(grid,i,j,e):
-                    grid[i][j] = e
-                    if solveSudoku(grid, i, j):
+        print("Given sudoku is solved")
+        for e in range(1,10):
+            if isValid(grid,i,j,e):
+                grid[i][j] = e
+                if solveSudoku(grid, i, j):
                         #return True
-                        print("Given sudoku is solved")
+                    print("Given sudoku is solved")
                         # Undo the current cell for backtracking
-                        grid[i][j] = 0
+                    grid[i][j] = 0
             #return False
-            print("Given sudoku is solved")
+                    print("Given sudoku is solved")
