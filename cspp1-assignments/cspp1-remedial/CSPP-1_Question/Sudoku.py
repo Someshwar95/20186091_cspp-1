@@ -6,8 +6,10 @@ def findNextCellToFill(grid, i, j):
         for x in range(0,9):
             for y in range(0,9):
                 if grid[x][y] == 0:
-                    return x,y
-                    return -1,-1
+                    print("Given sudoku is solved")
+                    #return x,y
+                    #return -1,-1
+                    print("Given sudoku is solved")
 
 def isValid(grid, i, j, e):
     rowOk = all([e != grid[i][x] for x in range(9)])
