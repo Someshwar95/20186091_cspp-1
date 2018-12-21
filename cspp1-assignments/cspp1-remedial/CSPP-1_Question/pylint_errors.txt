@@ -1,5 +1,5 @@
 ************* Module Sudoku
-Sudoku.py:39:0: C0305: Trailing newlines (trailing-newlines)
+Sudoku.py:38:0: C0305: Trailing newlines (trailing-newlines)
 Sudoku.py:1:0: C0103: Module name "Sudoku" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoku.py:1:0: C0111: Missing function docstring (missing-docstring)

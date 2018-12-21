@@ -1,4 +1,4 @@
-def print_grid(grd):
+def sudoku(grd):
     for i in range(9):
         print(grd[i])
 def create_set(a, row, col):
@@ -34,6 +34,5 @@ if __name__ == "__main__":
                 grid[i][j] = inp_ut[k]
             k += 1
     possiblechoice(grid)
-
 
 
