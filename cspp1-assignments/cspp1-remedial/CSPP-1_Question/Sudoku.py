@@ -1,7 +1,7 @@
 """
 { item_description }
 """
-def sudoku_grd(grd):
+def s_u_d_o_k_u(grd):
     for i in range(9):
         print(grd[i])
 """

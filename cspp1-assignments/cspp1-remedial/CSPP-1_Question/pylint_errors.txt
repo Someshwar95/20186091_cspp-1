@@ -19,5 +19,5 @@ Sudoku.py:36:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming
 Sudoku.py:37:4: C0103: Constant name "inp_ut" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 4.86/10 (previous run: 4.85/10, +0.01)
+Your code has been rated at 4.86/10 (previous run: 4.86/10, +0.00)
 
