@@ -30,14 +30,17 @@ def isValid(grid, i, j, e):
             print("Given sudoku is solved")
 
     def solveSudoku(grid, i=0, j=0):
-            i,j = findNextCellToFill(grid, i, j)
-            if i == -1:
-                    return True
+        i,j = findNextCellToFill(grid, i, j)
+        if i == -1:
+            #return True
+            print("Given sudoku is solved")
             for e in range(1,10):
-                    if isValid(grid,i,j,e):
-                            grid[i][j] = e
-                            if solveSudoku(grid, i, j):
-                                    return True
-                            # Undo the current cell for backtracking
-                            grid[i][j] = 0
-            return False
+                if isValid(grid,i,j,e):
+                    grid[i][j] = e
+                    if solveSudoku(grid, i, j):
+                        #return True
+                        print("Given sudoku is solved")
+                        # Undo the current cell for backtracking
+                        grid[i][j] = 0
+            #return False
+            print("Given sudoku is solved")
