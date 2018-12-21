@@ -33,5 +33,7 @@ if __name__ == "__main__":
             if inp_ut[k] != '.':
                 grid[i][j] = inp_ut[k]
             k += 1
-    # print_grid(grid)
     possiblechoice(grid)
+
+
+
