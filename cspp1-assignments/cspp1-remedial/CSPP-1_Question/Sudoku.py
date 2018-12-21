@@ -1,6 +1,12 @@
+"""
+{ item_description }
+"""
 def sudoku_grd(grd):
     for i in range(9):
         print(grd[i])
+"""
+{ item_description }
+"""
 def create_set(a, row, col):
     li_st = set()
     for i in range(9):
@@ -9,7 +15,9 @@ def create_set(a, row, col):
         if a[i][col] != '0':
             li_st.add(a[i][col])
     return li_st
-
+"""
+{ item_description }
+"""
 def possiblechoice(a):
     for i in range(9):
         for j in range(9):
