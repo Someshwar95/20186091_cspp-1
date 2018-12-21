@@ -1,4 +1,4 @@
-def findNextCellToFill(grid, i, j):
+def main(grid, i, j):
     for x in range(i,9):
         for y in range(j,9):
             if grid[x][y] == 0:
@@ -29,7 +29,7 @@ def isValid(grid, i, j, e):
             #return False
             print("Given sudoku is solved")
 
-def solveSudoku(grid, i=0, j=0):
+def Sudoku(grid, i=0, j=0):
     i,j = findNextCellToFill(grid, i, j)
     if i == -1:
             #return True
