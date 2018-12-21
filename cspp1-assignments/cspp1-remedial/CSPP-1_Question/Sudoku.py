@@ -33,7 +33,7 @@ def possiblechoice(a):
                 print(result)
 
 if __name__ == "__main__":
-    GRID = [['0' for x in range(9)]for y in range(9)]
+    grid = [['0' for x in range(9)]for y in range(9)]
     INP_UT = input()
     k = 0
     for i in range(9):
