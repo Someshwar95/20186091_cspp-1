@@ -2,17 +2,38 @@
 Sudoku.py:1:20: C0303: Trailing whitespace (trailing-whitespace)
 Sudoku.py:2:22: C0303: Trailing whitespace (trailing-whitespace)
 Sudoku.py:3:26: C0303: Trailing whitespace (trailing-whitespace)
-Sudoku.py:5:0: C0304: Final newline missing (missing-final-newline)
-Sudoku.py:5:18: C0326: No space allowed before bracket
-            print ('Given sudoku is solved') 
+Sudoku.py:4:18: C0326: No space allowed before bracket
+            print (arr[i][j])
                   ^ (bad-whitespace)
+Sudoku.py:5:18: C0326: No space allowed before bracket
+            print ('Given sudoku is solved')
+                  ^ (bad-whitespace)
+Sudoku.py:6:31: C0303: Trailing whitespace (trailing-whitespace)
+Sudoku.py:6:27: C0326: Exactly one space required after comma
+def find_empty_location(arr,l): 
+                           ^ (bad-whitespace)
+Sudoku.py:7:24: C0303: Trailing whitespace (trailing-whitespace)
+Sudoku.py:8:28: C0303: Trailing whitespace (trailing-whitespace)
+Sudoku.py:9:33: C0303: Trailing whitespace (trailing-whitespace)
+Sudoku.py:9:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+Sudoku.py:9:28: C0326: Exactly one space required around comparison
+            if(arr[row][col]==0): 
+                            ^^ (bad-whitespace)
+Sudoku.py:10:24: C0303: Trailing whitespace (trailing-whitespace)
+Sudoku.py:10:20: C0326: Exactly one space required around assignment
+                l[0]=row 
+                    ^ (bad-whitespace)
+Sudoku.py:11:24: C0303: Trailing whitespace (trailing-whitespace)
+Sudoku.py:11:20: C0326: Exactly one space required around assignment
+                l[1]=col 
+                    ^ (bad-whitespace)
+Sudoku.py:13:0: C0304: Final newline missing (missing-final-newline)
 Sudoku.py:1:0: C0103: Module name "Sudoku" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoku.py:1:0: C0111: Missing function docstring (missing-docstring)
-Sudoku.py:1:15: W0613: Unused argument 'arr' (unused-argument)
-Sudoku.py:2:8: W0612: Unused variable 'i' (unused-variable)
-Sudoku.py:3:12: W0612: Unused variable 'j' (unused-variable)
+Sudoku.py:6:0: C0103: Argument name "l" doesn't conform to snake_case naming style (invalid-name)
+Sudoku.py:6:0: C0111: Missing function docstring (missing-docstring)
 
----------------------------------------------------------------------
-Your code has been rated at -17.50/10 (previous run: -8.00/10, -9.50)
+----------------------------------------------------------------------
+Your code has been rated at -6.92/10 (previous run: -17.50/10, +10.58)
 
