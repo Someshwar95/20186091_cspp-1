@@ -5,7 +5,7 @@ def print_sudoku(grd):
     for i in range(9):
         print(grd[i])
 """
-{ item_description }
+creating a set
 """
 def create_set(a, row, col):
     li_st = set()
@@ -16,7 +16,7 @@ def create_set(a, row, col):
             li_st.add(a[i][col])
     return li_st
 """
-{ item_description }
+possibilities
 """
 def possiblechoice(a):
     for i in range(9):
@@ -25,7 +25,6 @@ def possiblechoice(a):
             s = set()
             if a[i][j] == '0':
                 s = create_set(a, i, j)
-                # print(s)
             if len(s) != 0:
                 for eaca in "123456789":
                     if eaca not in s:
