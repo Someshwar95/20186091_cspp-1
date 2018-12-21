@@ -1,34 +1,25 @@
 ************* Module Sudoku
-Sudoku.py:2:0: W0311: Bad indentation. Found 12 spaces, expected 4 (bad-indentation)
-Sudoku.py:2:28: C0326: Exactly one space required after comma
-            for x in range(i,9):
+Sudoku.py:2:20: C0326: Exactly one space required after comma
+    for x in range(i,9):
+                    ^ (bad-whitespace)
+Sudoku.py:3:24: C0326: Exactly one space required after comma
+        for y in range(j,9):
+                        ^ (bad-whitespace)
+Sudoku.py:5:24: C0326: Exactly one space required after comma
+                return x,y
+                        ^ (bad-whitespace)
+Sudoku.py:6:24: C0326: Exactly one space required after comma
+        for x in range(0,9):
+                        ^ (bad-whitespace)
+Sudoku.py:7:28: C0326: Exactly one space required after comma
+            for y in range(0,9):
                             ^ (bad-whitespace)
-Sudoku.py:3:0: W0311: Bad indentation. Found 20 spaces, expected 8 (bad-indentation)
-Sudoku.py:3:36: C0326: Exactly one space required after comma
-                    for y in range(j,9):
-                                    ^ (bad-whitespace)
-Sudoku.py:4:0: W0311: Bad indentation. Found 28 spaces, expected 12 (bad-indentation)
-Sudoku.py:5:0: W0311: Bad indentation. Found 36 spaces, expected 16 (bad-indentation)
-Sudoku.py:5:44: C0326: Exactly one space required after comma
-                                    return x,y
-                                            ^ (bad-whitespace)
-Sudoku.py:6:0: W0311: Bad indentation. Found 12 spaces, expected 4 (bad-indentation)
-Sudoku.py:6:28: C0326: Exactly one space required after comma
-            for x in range(0,9):
+Sudoku.py:9:28: C0326: Exactly one space required after comma
+                    return x,y
                             ^ (bad-whitespace)
-Sudoku.py:7:0: W0311: Bad indentation. Found 20 spaces, expected 8 (bad-indentation)
-Sudoku.py:7:36: C0326: Exactly one space required after comma
-                    for y in range(0,9):
-                                    ^ (bad-whitespace)
-Sudoku.py:8:0: W0311: Bad indentation. Found 28 spaces, expected 12 (bad-indentation)
-Sudoku.py:9:0: W0311: Bad indentation. Found 36 spaces, expected 16 (bad-indentation)
-Sudoku.py:9:44: C0326: Exactly one space required after comma
-                                    return x,y
-                                            ^ (bad-whitespace)
-Sudoku.py:10:0: W0311: Bad indentation. Found 12 spaces, expected 4 (bad-indentation)
-Sudoku.py:10:21: C0326: Exactly one space required after comma
-            return -1,-1
-                     ^ (bad-whitespace)
+Sudoku.py:10:29: C0326: Exactly one space required after comma
+                    return -1,-1
+                             ^ (bad-whitespace)
 Sudoku.py:18:90: C0303: Trailing whitespace (trailing-whitespace)
 Sudoku.py:27:0: W0311: Bad indentation. Found 12 spaces, expected 8 (bad-indentation)
 Sudoku.py:27:13: C0326: Exactly one space required after comma
@@ -60,10 +51,13 @@ Sudoku.py:1:0: C0103: Module name "Sudoku" doesn't conform to snake_case naming 
 Sudoku.py:1:0: C0111: Missing module docstring (missing-docstring)
 Sudoku.py:1:0: C0103: Function name "findNextCellToFill" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:1:0: C0111: Missing function docstring (missing-docstring)
-Sudoku.py:2:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Sudoku.py:3:24: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
-Sudoku.py:6:16: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
-Sudoku.py:7:24: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Sudoku.py:2:8: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Sudoku.py:3:12: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Sudoku.py:6:8: W0621: Redefining name 'x' from outer scope (line 2) (redefined-outer-name)
+Sudoku.py:6:12: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Sudoku.py:7:16: C0103: Variable name "y" doesn't conform to snake_case naming style (invalid-name)
+Sudoku.py:10:20: W0101: Unreachable code (unreachable)
+Sudoku.py:1:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 Sudoku.py:12:0: C0103: Function name "isValid" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:12:0: C0103: Argument name "e" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:12:0: C0111: Missing function docstring (missing-docstring)
@@ -77,6 +71,6 @@ Sudoku.py:23:24: W0101: Unreachable code (unreachable)
 Sudoku.py:26:4: C0103: Function name "solveSudoku" doesn't conform to snake_case naming style (invalid-name)
 Sudoku.py:30:16: C0103: Variable name "e" doesn't conform to snake_case naming style (invalid-name)
 
----------------------------------------------------------------------
-Your code has been rated at -6.06/10 (previous run: -13.33/10, +7.27)
+--------------------------------------------------------------------
+Your code has been rated at -4.24/10 (previous run: -6.06/10, +1.82)
 
