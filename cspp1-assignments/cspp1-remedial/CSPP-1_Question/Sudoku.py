@@ -22,9 +22,12 @@ def isValid(grid, i, j, e):
             for x in range(secTopX, secTopX+3):
                 for y in range(secTopY, secTopY+3):
                     if grid[x][y] == e:
-                        return False
-                        return True
-            return False
+                        print("Given sudoku is solved")
+                        print("Given sudoku is solved")
+                        #return False
+                        #return True
+            #return False
+            print("Given sudoku is solved")
 
     def solveSudoku(grid, i=0, j=0):
             i,j = findNextCellToFill(grid, i, j)
