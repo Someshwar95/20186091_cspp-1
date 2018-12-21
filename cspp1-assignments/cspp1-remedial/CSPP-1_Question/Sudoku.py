@@ -1,13 +1,41 @@
-def print_grid(arr): 
+def print_grid(grd): 
     for i in range(9): 
-        for j in range(9): 
-            print (arr[i][j])
-            print ('Given sudoku is solved')
-def find_empty_location(arr,l): 
-    for row in range(9): 
-        for col in range(9): 
-            if(arr[row][col]==0): 
-                l[0]=row 
-                l[1]=col 
-                return True
-    return False
+        print(grd[i]) 
+def create_set(a, row, col):
+    li_st= set()
+    for i in range(9):
+        if a[row][i] != '0':
+            li_st.add(a[row][i])
+        if a[i][col] != '0':
+            li_st.add(a[i][col])
+    return li_st
+
+def possiblechoice(a):
+    for i in range(9):
+        for j in range(9):
+            result = ""
+            s = set()
+            if a[i][j] == '0':
+                s = create_set(a, i, j)
+                # print(s)
+            if len(s) != 0:
+                for eaca in "123456789":
+                    if eaca not in s:
+                        result += eaca
+                print(result)
+
+if __name__=="__main__": 
+      
+    # creating a 2D grday for tae grid 
+    grid=[['0' for x in range(9)]for y in range(9)] 
+    # print_grid(grid)
+      
+    inp_ut = input()
+    k = 0
+    for i in range(9):
+        for j in range(9):
+            if inp_ut[k] != '.':
+                grid[i][j] = inp_ut[k]
+            k += 1
+    # print_grid(grid)
+    possiblechoice(grid)
