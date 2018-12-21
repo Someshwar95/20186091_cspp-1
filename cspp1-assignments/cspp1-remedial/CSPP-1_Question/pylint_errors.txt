@@ -1,11 +1,4 @@
 ************* Module Sudoku
-Sudoku.py:5:9: C0326: Exactly one space required before assignment
-    li_st= set()
-         ^ (bad-whitespace)
-Sudoku.py:27:24: C0303: Trailing whitespace (trailing-whitespace)
-Sudoku.py:27:11: C0326: Exactly one space required around comparison
-if __name__=="__main__": 
-           ^^ (bad-whitespace)
 Sudoku.py:28:0: C0303: Trailing whitespace (trailing-whitespace)
 Sudoku.py:29:38: C0303: Trailing whitespace (trailing-whitespace)
 Sudoku.py:30:51: C0303: Trailing whitespace (trailing-whitespace)
@@ -32,5 +25,5 @@ Sudoku.py:30:4: C0103: Constant name "grid" doesn't conform to UPPER_CASE naming
 Sudoku.py:33:4: C0103: Constant name "inp_ut" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 2.42/10 (previous run: 1.52/10, +0.91)
+Your code has been rated at 3.33/10 (previous run: 2.42/10, +0.91)
 

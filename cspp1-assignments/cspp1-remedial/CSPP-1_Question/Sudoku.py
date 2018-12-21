@@ -2,7 +2,7 @@ def print_grid(grd):
     for i in range(9):
         print(grd[i])
 def create_set(a, row, col):
-    li_st= set()
+    li_st = set()
     for i in range(9):
         if a[row][i] != '0':
             li_st.add(a[row][i])
@@ -24,7 +24,7 @@ def possiblechoice(a):
                         result += eaca
                 print(result)
 
-if __name__=="__main__": 
+if __name__ == "__main__":
       
     # creating a 2D grday for tae grid 
     grid=[['0' for x in range(9)]for y in range(9)] 
