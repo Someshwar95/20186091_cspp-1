@@ -25,11 +25,7 @@ def possiblechoice(a):
                 print(result)
 
 if __name__ == "__main__":
-      
-    # creating a 2D grday for tae grid 
-    grid=[['0' for x in range(9)]for y in range(9)] 
-    # print_grid(grid)
-      
+    grid = [['0' for x in range(9)]for y in range(9)]
     inp_ut = input()
     k = 0
     for i in range(9):
